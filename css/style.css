@@ -1,40 +1,140 @@
-/*
-# Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Red: hsl(0, 100%, 74%) 
-- Green: hsl(154, 59%, 51%)
-
-### Accent
-
-- Blue: hsl(248, 32%, 49%)
-
-### Neutral
-
-- Dark Blue: hsl(249, 10%, 26%) 
-- Grayish Blue: hsl(246, 25%, 77%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 16px
-
-### Font
-
-- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
-- Weights: 400, 500, 600, 700
-*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @import url(../css/reset.css);
+* {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  box-sizing: border-box; }
+
+body {
+  background-color: #ff7a7a;
+  padding: 1em;
+  max-width: 1440px;
+  margin: 0 auto; }
+  @media (max-width: 375.1px) {
+    body {
+      background-image: url(../images/bg-intro-mobile.png); } }
+  @media (min-width: 375.1px) {
+    body {
+      background-image: url(../images/bg-intro-desktop.png);
+      display: flex;
+      align-items: center;
+      padding: 8em; }
+      body footer {
+        position: fixed;
+        bottom: 1em;
+        left: 0;
+        right: 0; } }
+
+header {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 2.1em 0; }
+  header strong {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.8em;
+    padding-top: 1.65em; }
+  header p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.8em 1em;
+    line-height: 1.7em; }
+  @media (min-width: 375.1px) {
+    header strong {
+      font-weight: 700;
+      font-size: 4em;
+      text-align: start;
+      padding: 1em 0; }
+    header p {
+      text-align: start;
+      padding: 0;
+      width: 35em; } }
+
+main .banner {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  background-color: #6055a5;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  padding: 1.7em 4em;
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.28); }
+  main .banner strong {
+    font-weight: 700; }
+main form, main input {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 0.5em;
+  padding: 0.5em; }
+main form {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin: 1.5em auto;
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.28); }
+  main form div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap; }
+  main form input {
+    border: 1px solid #b9b6d3;
+    margin: 1em 0;
+    text-align: start;
+    font-weight: 700;
+    color: #3e3c49;
+    padding: .5em 2em;
+    width: 100%; }
+  main form p {
+    color: #3e3c49;
+    font-size: .7em;
+    padding: 0 3em;
+    line-height: 2em; }
+    main form p a {
+      color: #ff7a7a;
+      text-decoration-line: none;
+      font-weight: 700; }
+main .claim {
+  background: #38cc8c;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 500; }
+
+.error-icon {
+  position: absolute;
+  transform: translate(-1em, -0.7em);
+  display: none; }
+
+.error-message {
+  color: #ff7a7a;
+  padding: 0;
+  text-align: end;
+  transform: translateY(-1em);
+  display: none; }
+
+.com-erro * {
+  display: block; }
+.com-erro input {
+  border: 1px solid #ff7a7a; }
 
 /*# sourceMappingURL=style.css.map */

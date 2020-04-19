@@ -1,0 +1,77 @@
+main{
+    .banner{
+        @include fontePadrao();
+        background-color: $blue-accent;
+        @include radius();
+        padding: 1.7em 4em;
+        @include sombra();
+        strong{
+            font-weight: 700;
+        }
+    }
+    form, input{
+        @include fontePadrao();
+        background: $branco;
+        @include radius();
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        margin: 1.5em auto;
+        @include sombra();
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+        }
+        input{
+            border: 1px solid $grayish-blue-neutral;
+            margin: 1em 0;
+            text-align: start;
+            font-weight: 700;
+            color: $dark-blue-neutral;
+            padding: .5em 2em;
+            width: 100%;
+        }
+        p{
+            color: $dark-blue-neutral;
+            font-size: .7em;
+            padding: 0 3em;
+            line-height: 2em;
+            a{
+                color: $red-primary;
+                text-decoration-line: none;
+                font-weight: 700;
+            }
+        }
+    }
+    .claim{
+        background: $green-primary;
+        text-align: center;
+        text-transform: uppercase;
+        color: $branco;
+        font-weight: 500;
+    }
+}
+.error-icon{
+    position: absolute;
+    transform: translate(-1em, -.7em);
+    display: none;
+}
+.error-message{
+    color: $red-primary;
+    padding: 0;
+    text-align: end;
+    transform: translateY(-1em);
+    display: none;
+}
+.com-erro{
+    *{
+        display: block;
+    }
+    input{
+        border: 1px solid $red-primary;
+    }
+}

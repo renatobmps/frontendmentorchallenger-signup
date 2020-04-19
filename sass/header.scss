@@ -1,0 +1,28 @@
+header{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 2.1em 0;
+    strong{
+        @include fontePadrao(600);
+        font-size: 1.8em;
+        padding-top: 1.65em;
+    }
+    p{
+        @include fontePadrao();
+        padding: 1.8em 1em;
+        line-height: 1.7em;
+    }
+    @media #{$bp-desktop} {
+        strong{
+            font-weight: 700;
+            font-size: 4em;
+            text-align: start;
+            padding: 1em 0;
+        }
+        p{
+            text-align: start;
+            padding: 0;
+            width: 35em;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+*{
+    @include fontePadrao();
+    box-sizing: border-box;
+}
+body{
+    background-color: $red-primary;
+    padding: 1em;
+    max-width: $desktop;
+    margin: 0 auto;
+    @media #{$bp-mobile} {
+        background-image: url(../images/bg-intro-mobile.png);
+    }
+    @media #{$bp-desktop} {
+        background-image: url(../images/bg-intro-desktop.png);
+        display: flex;
+        align-items: center;
+        padding: 8em;
+        footer{
+            position: fixed;
+            bottom: 1em;
+            left: 0;
+            right: 0;
+        }
+    }
+}
