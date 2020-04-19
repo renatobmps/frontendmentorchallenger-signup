@@ -24,24 +24,24 @@
   </header>
   <main>
     <div class="banner"><strong>Try it free 7 days</strong> then $20/mo. thereafter</div>
-    <form action="enviar">
+    <form action="enviar" id="formulario">
       <div id="campo-first-name">
-        <input type="text" id="first-name" class="campos" placeholder="First Name"  name="first-name">
+        <input type="text" id="first-name" class="campos" placeholder="First Name" name="first-name" aria-labelledby="first-name formulario">
         <img src="images/icon-error.svg" alt="icone de erro" class="error-icon icon-erro-first-name">
         <p class="error-message erro-first-name">First Name cannot be empty</p>
       </div>
       <div id="campo-last-name">
-        <input type="text" id="last-name" class="campos" placeholder="Last Name"  name="last-name">
+        <input type="text" id="last-name" class="campos" placeholder="Last Name"  name="last-name" aria-labelledby="last-name formulario">
         <img src="images/icon-error.svg" alt="icone de erro" class="error-icon icon-erro-last-name">
         <p class="error-message erro-first-name">Last Name cannot be empty</p>
       </div>
       <div id="campo-email">
-        <input type="email" id="email" class="campos" placeholder="Email Address"  name="email">
+        <input type="email" id="email" class="campos" placeholder="Email Address"  name="email" aria-labelledby="email formulario">
         <img src="images/icon-error.svg" alt="icone de erro" class="error-icon icon-erro-email">
         <p class="error-message erro-first-name">Looks like this is not an email</p>
       </div>
       <div id="campo-password">
-        <input type="password" id="password" class="campos" placeholder="Password">
+        <input type="password" id="password" class="campos" placeholder="Password" aria-labelledby="password formulario">
         <img src="images/icon-error.svg" alt="icone de erro" class="error-icon icon-erro-password">
         <p class="error-message erro-first-name">Password cannot be empty</p>
       </div>

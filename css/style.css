@@ -91,6 +91,9 @@ main form {
   -webkit-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.28);
   -moz-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.28);
   box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.28); }
+  @media (min-width: 375.1px) {
+    main form {
+      width: 30em; } }
   main form div {
     display: flex;
     align-items: center;

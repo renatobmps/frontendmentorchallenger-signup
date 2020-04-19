@@ -20,6 +20,9 @@ main{
         padding: 1em;
         margin: 1.5em auto;
         @include sombra();
+        @media #{$bp-desktop} {
+            width: 30em;
+        }
         div{
             display: flex;
             align-items: center;

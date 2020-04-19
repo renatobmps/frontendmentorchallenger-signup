@@ -1,11 +1,33 @@
 let $ = document.querySelector.bind(document)
 let $a = document.querySelectorAll.bind(document)
 
+$a(".campos").forEach(campo => {
+    campo.addEventListener("blur", () => {
+        console.log(campo.type)
+        if(campo.type == "email"){
+            console.log("É email")
+            if(!validacaoEmail(campo)){
+                console.log("Email fora do padrão")
+                campo.parentElement.classList.add("com-erro")
+            }else{
+                console.log("Email no padrão")
+                campo.parentElement.classList.remove("com-erro")
+            }
+        }else{
+            console.log("Não é email")
+            if(campo.value == 0){
+                console.log("Campo vazio")
+                campo.parentElement.classList.add("com-erro")
+            }else{
+                console.log("Campo preenchido")
+                campo.parentElement.classList.remove("com-erro")
+            }
+        }
+    })
+});
+
 $("form").addEventListener("submit", e => {
     e.preventDefault()
-    $a(".campos").forEach(campo => {
-        campo.parentElement.classList.remove("com-erro")
-    });
     if(validaVazio($a(".campos")[0])){
         if(validaVazio($a(".campos")[1])){
             if(validacaoEmail($a(".campos")[2])){
